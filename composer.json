@@ -1,0 +1,49 @@
+
+{
+    "name": "mirko/packy",
+    "type": "library",
+    "description": "package test",
+    "keywords": ["packy","laravel"],
+    "homepage": "https://gitlab.com/Mirko/packy",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "mirko",
+        "email": "bukela@gmail.com",
+        "homepage": "https://mirko.com",
+        "role": "developer"
+      }
+    ],
+    "require": {
+      "php": "^7.1.3"
+    },
+    "require-dev": {
+      "phpunit/phunit": ">=5.4.3"
+    },
+    "autoload": {
+      "psr-4": {
+        "Mirko\\Packy\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Mirko\\Packy\\": "tests"
+      }
+    },
+    "extra": {
+          "laravel": {
+              "providers": [
+                  "Mirko\\Packy\\PackyServiceProvider"
+              ],
+              "aliases": {
+                  "Packy": "Mirko\\Packy\\PackyFacade"
+              }
+          }
+      },
+      "prefer-stable": true,
+      "minimum-stability": "dev",
+      "config": {
+          "sort-packages": true
+      }
+  }
+  
