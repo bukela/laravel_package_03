@@ -7,6 +7,9 @@
     <title>Packy</title>
 </head>
 <body>
+    <div style="background : violet; text-align : center">
     <h1>Hellooo Packy</h1>
+    <h2>Version 1.1</h2>
+    </div>
 </body>
 </html>
